@@ -4,7 +4,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 
-const products = ['Widget A', 'Gadget B', 'Tool C', 'Device D', 'Item E'];
+const products = ['Earphones', 'Coca Cola ', 'Apple', 'Smartphone', 'T-shirt'];
 
 function InventoryPrediction() {
   const [productName, setProductName] = useState('');

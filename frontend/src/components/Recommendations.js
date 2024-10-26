@@ -13,8 +13,8 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 const mockRecommendations = [
   { 
     id: 1, 
-    title: 'Increase stock of Widget A', 
-    description: 'Based on recent sales trends and upcoming seasonal demand, we recommend increasing the stock of Widget A by 20%.', 
+    title: 'Increase stock of Earphones', 
+    description: 'Based on recent sales trends and upcoming seasonal demand, we recommend increasing the stock of Earphones by 20%.', 
     impact: 'High',
     category: 'Inventory',
     potentialRevenue: '$5,000',
@@ -23,8 +23,8 @@ const mockRecommendations = [
   },
   { 
     id: 2, 
-    title: 'Promote Gadget B', 
-    description: 'Gadget B has been underperforming. Consider running a promotional campaign to boost sales.', 
+    title: 'PromoteCoca Cola ', 
+    description: 'Coca Cola  has been underperforming. Consider running a promotional campaign to boost sales.', 
     impact: 'Medium',
     category: 'Marketing',
     potentialRevenue: '$3,000',
@@ -33,8 +33,8 @@ const mockRecommendations = [
   },
   { 
     id: 3, 
-    title: 'Optimize layout for Tool C', 
-    description: 'Tool C sells better when placed near the entrance. Consider relocating it for better visibility.', 
+    title: 'Optimize layout forApple', 
+    description: 'Apple sells better when placed near the entrance. Consider relocating it for better visibility.', 
     impact: 'Low',
     category: 'Store Layout',
     potentialRevenue: '$1,000',
@@ -43,8 +43,8 @@ const mockRecommendations = [
   },
   { 
     id: 4, 
-    title: 'Bundle Device D with Item E', 
-    description: 'Customers who buy Device D often purchase Item E as well. Create a bundle offer to increase average order value.', 
+    title: 'Bundle Smartphone with T-shirt', 
+    description: 'Customers who buy Smartphone often purchase T-shirt as well. Create a bundle offer to increase average order value.', 
     impact: 'Medium',
     category: 'Sales',
     potentialRevenue: '$2,500',

@@ -11,9 +11,9 @@ function QualityControl() {
     // Simulate image processing and AI analysis
     setTimeout(() => {
       const mockQualityReports = [
-        { id: 1, product: 'Widget A', batchNumber: 'WA-001', expirationDate: '2023-12-31', condition: 'Good', action: 'None' },
-        { id: 2, product: 'Gadget B', batchNumber: 'GB-002', expirationDate: '2023-11-15', condition: 'Damaged Packaging', action: 'Markdown' },
-        { id: 3, product: 'Tool C', batchNumber: 'TC-003', expirationDate: '2023-10-01', condition: 'Near Expiration', action: 'Remove' },
+        { id: 1, product: 'Earphones', batchNumber: 'WA-001', expirationDate: '2023-12-31', condition: 'Good', action: 'None' },
+        { id: 2, product: 'Coca Cola ', batchNumber: 'GB-002', expirationDate: '2023-11-15', condition: 'Damaged Packaging', action: 'Markdown' },
+        { id: 3, product: 'Apple', batchNumber: 'TC-003', expirationDate: '2023-10-01', condition: 'Near Expiration', action: 'Remove' },
       ];
       setQualityReports(mockQualityReports);
       setLoading(false);

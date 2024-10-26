@@ -8,11 +8,11 @@ import SortIcon from '@mui/icons-material/Sort';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const mockAlerts = [
-  { id: 1, product: 'Widget A', currentStock: 5, threshold: 10, status: 'Low', daysUntilStockout: 3, reorderQuantity: 50 },
-  { id: 2, product: 'Gadget B', currentStock: 0, threshold: 5, status: 'Out of Stock', daysUntilStockout: 0, reorderQuantity: 25 },
-  { id: 3, product: 'Tool C', currentStock: 8, threshold: 15, status: 'Low', daysUntilStockout: 5, reorderQuantity: 30 },
-  { id: 4, product: 'Device D', currentStock: 20, threshold: 25, status: 'Adequate', daysUntilStockout: 14, reorderQuantity: 0 },
-  { id: 5, product: 'Item E', currentStock: 3, threshold: 10, status: 'Critical', daysUntilStockout: 1, reorderQuantity: 40 },
+  { id: 1, product: 'Earphones', currentStock: 5, threshold: 10, status: 'Low', daysUntilStockout: 3, reorderQuantity: 50 },
+  { id: 2, product: 'Coca Cola ', currentStock: 0, threshold: 5, status: 'Out of Stock', daysUntilStockout: 0, reorderQuantity: 25 },
+  { id: 3, product: 'Apple', currentStock: 8, threshold: 15, status: 'Low', daysUntilStockout: 5, reorderQuantity: 30 },
+  { id: 4, product: 'Smartphone', currentStock: 20, threshold: 25, status: 'Adequate', daysUntilStockout: 14, reorderQuantity: 0 },
+  { id: 5, product: 'T-shirt', currentStock: 3, threshold: 10, status: 'Critical', daysUntilStockout: 1, reorderQuantity: 40 },
 ];
 
 function StockAlerts() {
