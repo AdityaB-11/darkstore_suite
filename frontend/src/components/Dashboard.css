@@ -1,0 +1,132 @@
+:root {
+  --primary-gradient: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+  --secondary-gradient: linear-gradient(135deg, #3b82f6 0%, #10b981 100%);
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --card-border: rgba(255, 255, 255, 0.2);
+}
+
+body {
+  background: #111827;
+  color: #ffffff;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.dashboard-title {
+  opacity: 0;
+  color: #ffffff;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.dashboard-title.animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.dashboard-card {
+  opacity: 0;
+}
+
+.dashboard-card.animate {
+  animation: fadeInUp 0.5s ease-out forwards;
+}
+
+/* Glassmorphism effect for cards */
+.MuiPaper-root, .MuiCard-root {
+  background: var(--card-bg) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--card-border);
+  border-radius: 16px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiCard-root:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+}
+
+/* Text color for all typography */
+.MuiTypography-root {
+  color: #ffffff !important;
+}
+
+/* Secondary text color */
+.MuiTypography-colorTextSecondary {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+/* Gradient effect for icons */
+.MuiSvgIcon-root {
+  fill: url(#gradient) #ffffff;
+}
+
+/* Pulsing effect for icon wrapper */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0.7);
+  }
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 10px rgba(99, 102, 241, 0);
+  }
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(99, 102, 241, 0);
+  }
+}
+
+/* .MuiCard-root:hover .MuiBox-root { */
+  /* animation: pulse 2s infinite;
+} */
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1f2937;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Chart customization */
+.recharts-cartesian-grid-horizontal line,
+.recharts-cartesian-grid-vertical line {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.recharts-text {
+  fill: #ffffff;
+}
+
+.recharts-legend-item-text {
+  color: #ffffff !important;
+}
+
+.recharts-default-tooltip {
+  background-color: rgba(17, 24, 39, 0.8) !important;
+  border: 1px solid var(--card-border) !important;
+  border-radius: 8px !important;
+}
+
+.recharts-tooltip-label, .recharts-tooltip-item {
+  color: #ffffff !important;
+}
